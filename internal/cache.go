@@ -214,14 +214,14 @@ func (cache *Cache) FetchTwts(conf *Config, archive Archiver, feeds types.Feeds,
 					var userAgent string
 					if len(feedFollowers) == 1 {
 						userAgent = fmt.Sprintf(
-							"twtxt/%s (+%s; @%s)",
-							twtxt.FullVersion(),
+							"yarnd/%s (+%s; @%s)",
+							yarn.FullVersion(),
 							URLForUser(conf.BaseURL, feedFollowers[0]), feedFollowers[0],
 						)
 					} else {
 						userAgent = fmt.Sprintf(
-							"twtxt/%s (~%s; contact=%s)",
-							twtxt.FullVersion(),
+							"yarnd/%s (~%s; contact=%s)",
+							yarn.FullVersion(),
 							URLForWhoFollows(conf.BaseURL, feed, len(feedFollowers)),
 							URLForPage(conf.BaseURL, "support"),
 						)

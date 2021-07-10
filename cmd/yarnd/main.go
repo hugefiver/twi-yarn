@@ -232,7 +232,7 @@ func main() {
 	parseArgs()
 
 	if version {
-		fmt.Printf("twtxt v%s", twtxt.FullVersion())
+		fmt.Printf("twtxt v%s", yarn.FullVersion())
 		os.Exit(0)
 	}
 
@@ -337,7 +337,7 @@ func main() {
 		}()
 	}
 
-	log.Infof("%s v%s listening on http://%s", path.Base(os.Args[0]), twtxt.FullVersion(), bind)
+	log.Infof("%s v%s listening on http://%s", path.Base(os.Args[0]), yarn.FullVersion(), bind)
 	if err := svr.Run(); err != nil {
 		log.WithError(err).Fatal("error running or shutting down server")
 	}

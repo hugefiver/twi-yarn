@@ -25,6 +25,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/unrolled/logger"
 
+	"git.mills.io/yarnsocial/yarn"
 	"git.mills.io/yarnsocial/yarn/internal/auth"
 	"git.mills.io/yarnsocial/yarn/internal/passwords"
 	"git.mills.io/yarnsocial/yarn/internal/session"
@@ -297,9 +298,9 @@ func (s *Server) setupMetrics() {
 	)
 	metrics.GaugeVec("server", "info").
 		With(map[string]string{
-			"full_version": twtxt.FullVersion(),
-			"version":      twtxt.Version,
-			"commit":       twtxt.Commit,
+			"full_version": yarn.FullVersion(),
+			"version":      yarn.Version,
+			"commit":       yarn.Commit,
 		}).Set(1)
 
 	// old avatars

@@ -99,7 +99,7 @@ func NewContext(conf *Config, db Store, req *http.Request) *Context {
 		Logo:             template.HTML(conf.Logo),
 		BaseURL:          conf.BaseURL,
 		InstanceName:     conf.Name,
-		SoftwareVersion:  twtxt.FullVersion(),
+		SoftwareVersion:  yarn.FullVersion(),
 		TwtsPerPage:      conf.TwtsPerPage,
 		TwtPrompt:        conf.RandomTwtPrompt(),
 		MaxTwtLength:     conf.MaxTwtLength,
@@ -107,7 +107,7 @@ func NewContext(conf *Config, db Store, req *http.Request) *Context {
 		OpenProfiles:     conf.OpenProfiles,
 		LastTwt:          types.NilTwt,
 
-		Commit:      twtxt.Commit,
+		Commit:      yarn.Commit,
 		Theme:       conf.Theme,
 		Lang:        conf.Lang,
 		AcceptLangs: req.Header.Get("Accept-Language"),

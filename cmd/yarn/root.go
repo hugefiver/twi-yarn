@@ -20,8 +20,8 @@ var configFile string
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:     "twt",
-	Version: twtxt.FullVersion(),
+	Use:     "yarn",
+	Version: yarn.FullVersion(),
 	Short:   "Command-line client for twtxt",
 	Long:    `...`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {

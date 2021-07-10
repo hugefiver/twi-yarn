@@ -1,8 +1,8 @@
-package twtxt
+package yarn
 
-/* 📕 twtxt is a Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!
+/* 📕 yarn is a Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!
 
-Copyright (C) 2020 James Mills
+Copyright (C) 2020-present James Mills
 
 twtxt is covered by the MIT license:
 

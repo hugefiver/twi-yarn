@@ -31,6 +31,8 @@ import (
 	_ "image/jpeg"
 	"image/png"
 
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/types"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/audiolion/ipip"
 	"github.com/bakape/thumbnailer/v2"
@@ -43,8 +45,6 @@ import (
 	"github.com/gomarkdown/markdown/parser"
 	"github.com/goware/urlx"
 	"github.com/h2non/filetype"
-	"git.mills.io/yarnsocial/yarn"
-	"git.mills.io/yarnsocial/yarn/types"
 	shortuuid "github.com/lithammer/shortuuid/v3"
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/nullrocks/identicon"
@@ -278,8 +278,8 @@ func Request(conf *Config, method, url string, headers http.Header) (*http.Respo
 		headers.Set(
 			"User-Agent",
 			fmt.Sprintf(
-				"twtxt/%s (Pod: %s Support: %s)",
-				twtxt.FullVersion(), conf.Name, URLForPage(conf.BaseURL, "support"),
+				"yarnd/%s (Pod: %s Support: %s)",
+				yarn.FullVersion(), conf.Name, URLForPage(conf.BaseURL, "support"),
 			),
 		)
 	}

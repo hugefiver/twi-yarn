@@ -16,6 +16,7 @@ import (
 	"time"
 
 	"git.mills.io/prologic/smtpd"
+	"git.mills.io/yarnsocial/yarn"
 	"git.mills.io/yarnsocial/yarn/internal/passwords"
 	"github.com/emersion/go-message"
 	"github.com/marcinwyszynski/popart"
@@ -321,7 +322,7 @@ func (s *SMTPService) ListenAndServe() error {
 		Addr:         s.config.SMTPBind,
 		Handler:      s.mailHandler(),
 		HandlerRcpt:  s.rcptHandler(),
-		Appname:      fmt.Sprintf("%x SMTP v%s", s.config.Name, twtxt.Version),
+		Appname:      fmt.Sprintf("%x SMTP v%s", s.config.Name, yarn.Version),
 		Hostname:     HostnameFromURL(s.config.BaseURL),
 		AuthMechs:    authMechs,
 		AuthHandler:  s.authHandler(),

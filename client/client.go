@@ -16,7 +16,7 @@ import (
 
 var (
 	// DefaultUserAgent ...
-	DefaultUserAgent = fmt.Sprintf("twt/%s", twtxt.FullVersion())
+	DefaultUserAgent = fmt.Sprintf("twt/%s", yarn.FullVersion())
 
 	// ErrBadRequest ...
 	ErrBadRequest = errors.New("error: bad request")

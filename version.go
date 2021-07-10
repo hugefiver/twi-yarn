@@ -1,4 +1,4 @@
-package twtxt
+package yarn
 
 import (
 	"fmt"
