@@ -10,8 +10,8 @@
 
 /dist
 
-/twt
-/twtd
+/yarn
+/yarnd
 /.envrc
 
 /cmd/yarn/yarn
