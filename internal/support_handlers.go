@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/jointwt/twtxt/internal/session"
+	"git.mills.io/yarnsocial/yarn/internal/session"
 	"github.com/julienschmidt/httprouter"
 	log "github.com/sirupsen/logrus"
 	"github.com/steambap/captcha"

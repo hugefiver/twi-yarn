@@ -5,7 +5,7 @@ import (
 
 	"github.com/julienschmidt/httprouter"
 
-	"github.com/jointwt/twtxt/internal/session"
+	"git.mills.io/yarnsocial/yarn/internal/session"
 )
 
 // Options ...

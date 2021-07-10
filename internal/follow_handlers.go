@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/jointwt/twtxt"
+	"git.mills.io/yarnsocial/yarn"
 	"github.com/julienschmidt/httprouter"
 	log "github.com/sirupsen/logrus"
 )

@@ -25,11 +25,11 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/unrolled/logger"
 
-	"github.com/jointwt/twtxt"
-	"github.com/jointwt/twtxt/internal/auth"
-	"github.com/jointwt/twtxt/internal/passwords"
-	"github.com/jointwt/twtxt/internal/session"
-	"github.com/jointwt/twtxt/internal/webmention"
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/internal/auth"
+	"git.mills.io/yarnsocial/yarn/internal/passwords"
+	"git.mills.io/yarnsocial/yarn/internal/session"
+	"git.mills.io/yarnsocial/yarn/internal/webmention"
 )
 
 var (

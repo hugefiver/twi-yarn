@@ -32,8 +32,8 @@ import (
 	"github.com/vcraescu/go-paginator/adapter"
 	"gopkg.in/yaml.v2"
 
-	"github.com/jointwt/twtxt/internal/session"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/internal/session"
+	"git.mills.io/yarnsocial/yarn/types"
 )
 
 const (
@@ -475,7 +475,7 @@ func (s *Server) AvatarHandler() httprouter.Handle {
 		// Apple iOS 14.x is lying. It claims it can support WebP and sends
 		// an Accept: image/webp,... however it doesn't render the WebP
 		// correctly at all.
-		// XXX: https://github.com/jointwt/twtxt/issues/337 for details
+		// XXX: https://git.mills.io/yarnsocial/yarn/issues/337 for details
 		if preferredContentType == "image/webp" && strings.Contains(r.UserAgent(), "iPhone OS 14") {
 			preferredContentType = "image/png"
 		}
@@ -1638,7 +1638,7 @@ func (s *Server) ExternalAvatarHandler() httprouter.Handle {
 		// Apple iOS 14.x is lying. It claims it can support WebP and sends
 		// an Accept: image/webp,... however it doesn't render the WebP
 		// correctly at all.
-		// XXX: https://github.com/jointwt/twtxt/issues/337 for details
+		// XXX: https://git.mills.io/yarnsocial/yarn/issues/337 for details
 		if preferredContentType == "image/webp" && strings.Contains(r.UserAgent(), "iPhone OS 14") {
 			preferredContentType = "image/png"
 		}

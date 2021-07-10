@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/jointwt/twtxt/client"
+	"git.mills.io/yarnsocial/yarn/client"
 )
 
 // postCmd represents the pub command

@@ -1,4 +1,4 @@
-module github.com/jointwt/twtxt
+module git.mills.io/yarnsocial/yarn
 
 go 1.16
 
@@ -78,7 +78,6 @@ require (
 	github.com/steambap/captcha v1.3.1
 	github.com/stretchr/objx v0.3.0 // indirect
 	github.com/stretchr/testify v1.6.1
-	github.com/tdewolff/test v1.0.6
 	github.com/tebeka/selenium v0.9.9
 	github.com/theplant-retired/timezones v0.0.0-20150304063004-f9bd3c0ef9db
 	github.com/unrolled/logger v0.0.0-20201216141554-31a3694fe979

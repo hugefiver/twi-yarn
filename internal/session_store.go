@@ -6,7 +6,7 @@ import (
 	"github.com/patrickmn/go-cache"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/jointwt/twtxt/internal/session"
+	"git.mills.io/yarnsocial/yarn/internal/session"
 )
 
 // SessionStore ...

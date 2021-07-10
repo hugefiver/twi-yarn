@@ -10,8 +10,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/jointwt/twtxt"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/types"
 )
 
 var (

@@ -11,7 +11,7 @@ import (
 	"github.com/gomarkdown/markdown"
 	"github.com/gomarkdown/markdown/html"
 	"github.com/gomarkdown/markdown/parser"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 	"github.com/julienschmidt/httprouter"
 	"github.com/securisec/go-keywords"
 	log "github.com/sirupsen/logrus"

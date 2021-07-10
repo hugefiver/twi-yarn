@@ -13,8 +13,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/jointwt/twtxt/types"
-	"github.com/jointwt/twtxt/types/lextwt"
+	"git.mills.io/yarnsocial/yarn/types"
+	"git.mills.io/yarnsocial/yarn/types/lextwt"
 )
 
 // statsCmd represents the stats command

@@ -8,7 +8,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 )
 
 // Parser

@@ -8,7 +8,7 @@ import (
 	"github.com/nicksnyder/go-i18n/v2/i18n"
 	"golang.org/x/text/language"
 
-	"github.com/jointwt/twtxt/internal/langs"
+	"git.mills.io/yarnsocial/yarn/internal/langs"
 )
 
 type Translator struct {

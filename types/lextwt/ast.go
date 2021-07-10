@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 	"golang.org/x/crypto/blake2b"
 )
 

@@ -13,7 +13,7 @@ import (
 	"github.com/spf13/viper"
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/jointwt/twtxt/client"
+	"git.mills.io/yarnsocial/yarn/client"
 )
 
 // loginCmd represents the pub command

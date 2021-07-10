@@ -5,15 +5,15 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/prologic/twtxt)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/prologic/twtxt)
 
-![](https://github.com/jointwt/twtxt/workflows/Coverage/badge.svg)
-![](https://github.com/jointwt/twtxt/workflows/Docker/badge.svg)
-![](https://github.com/jointwt/twtxt/workflows/Go/badge.svg)
-![](https://github.com/jointwt/twtxt/workflows/ReviewDog/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/Coverage/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/Docker/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/Go/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/ReviewDog/badge.svg)
 
 [![Go Report Card](https://goreportcard.com/badge/jointwt/twtxt)](https://goreportcard.com/report/jointwt/twtxt)
 [![codebeat badge](https://codebeat.co/badges/15fba8a5-3044-4f40-936f-9e0f5d5d1fd9)](https://codebeat.co/projects/github-com-prologic-twtxt-master)
-[![GoDoc](https://godoc.org/github.com/jointwt/twtxt?status.svg)](https://godoc.org/github.com/jointwt/twtxt)
-[![GitHub license](https://img.shields.io/github/license/jointwt/twtxt.svg)](https://github.com/jointwt/twtxt)
+[![GoDoc](https://godoc.org/git.mills.io/yarnsocial/yarn?status.svg)](https://godoc.org/git.mills.io/yarnsocial/yarn)
+[![GitHub license](https://img.shields.io/github/license/jointwt/twtxt.svg)](https://git.mills.io/yarnsocial/yarn)
 
 📕 twtxt is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
 
@@ -53,18 +53,18 @@ This project offers fully-managed, 1-click instances of this platform we call [T
 
 Please visit [Twt.social](https://twt.social) to get your pod today!
 
-> __NOTE:__ As of 15th Aug 2020 ([comment](https://github.com/jointwt/twtxt/issues/87#issuecomment-674101304) [announcement](https://twtxt.net/twt/zauzpsrkzra) [blog](https://www.prologic.blog/2020/08/15/ann-twtsocial-is.html)), this is completely _FREE_ and we invite anyone to contact us for an invite code to be one of the first few pod owners!
+> __NOTE:__ As of 15th Aug 2020 ([comment](https://git.mills.io/yarnsocial/yarn/issues/87#issuecomment-674101304) [announcement](https://twtxt.net/twt/zauzpsrkzra) [blog](https://www.prologic.blog/2020/08/15/ann-twtsocial-is.html)), this is completely _FREE_ and we invite anyone to contact us for an invite code to be one of the first few pod owners!
 
 ## Installation
 
 ### Pre-built Binaries
 
-__NOTE:__ Please don't use the pre-built binaries until [Issue #250](https://github.com/jointwt/twtxt/issues/250) is resolved.
+__NOTE:__ Please don't use the pre-built binaries until [Issue #250](https://git.mills.io/yarnsocial/yarn/issues/250) is resolved.
           Please build from source or use the [Docker Images](https://hub.docker.com/jointwt).
           Thank you. 🙇‍♂️
 
 As a first point, please try to use one of the pre-built binaries that are
-available on the [Releases](https://github.com/jointwt/twtxt/releases) page.
+available on the [Releases](https://git.mills.io/yarnsocial/yarn/releases) page.
 
 ### Using Homebrew
 
@@ -95,7 +95,7 @@ This is an option if you are familiar with [Go](https://golang.org) development.
 1. Clone this repository (_this is important_)
 
 ```console
-git clone https://github.com/jointwt/twtxt.git
+git clone https://git.mills.io/yarnsocial/yarn.git
 ```
 
 2. Install required dependencies (_this is important_)
@@ -284,14 +284,14 @@ Support the ongoing development of twtxt!
 **Sponsor**
 
 - Become a [Sponsor](https://www.patreon.com/prologic)
-- Contribute! See [Issues](https://github.com/jointwt/twtxt/issues)
+- Contribute! See [Issues](https://git.mills.io/yarnsocial/yarn/issues)
 
 ## Contributing
 
 Interested in contributing to this project? You are welcome! Here are some ways
 you can contribute:
 
-- [File an Issue](https://github.com/jointwt/twtxt/issues/new) -- For a bug,
+- [File an Issue](https://git.mills.io/yarnsocial/yarn/issues/new) -- For a bug,
   or interesting idea you have for a new feature or just general questions.
 - Submit a Pull-Request or two! We welcome all PR(s) that improve the project!
 
@@ -307,7 +307,7 @@ Please see the [Contributing Guidelines](/CONTRIBUTING.md) and checkout the
 
 Thank you to all those that have contributed to this project, battle-tested it, used it in their own projects or products, fixed bugs, improved performance and even fix tiny typos in documentation! Thank you and keep contributing!
 
-You can find an [AUTHORS](/AUTHORS) file where we keep a list of contributors to the project. If you contribute a PR please consider adding your name there. There is also Github's own [Contributors](https://github.com/jointwt/twtxt/graphs/contributors) statistics.
+You can find an [AUTHORS](/AUTHORS) file where we keep a list of contributors to the project. If you contribute a PR please consider adding your name there. There is also Github's own [Contributors](https://git.mills.io/yarnsocial/yarn/graphs/contributors) statistics.
 
 [![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/0)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/0)
 [![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/1)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/1)

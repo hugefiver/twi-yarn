@@ -13,7 +13,7 @@ import (
 
 	"github.com/gabstv/merger"
 	"github.com/goccy/go-yaml"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 	log "github.com/sirupsen/logrus"
 )
 

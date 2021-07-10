@@ -13,7 +13,7 @@ import (
 	read_file_last_line "github.com/prologic/read-file-last-line"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 )
 
 const (

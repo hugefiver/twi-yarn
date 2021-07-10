@@ -14,10 +14,10 @@ import (
 	flag "github.com/spf13/pflag"
 	profiler "github.com/wblakecaldwell/profiler"
 
-	"github.com/jointwt/twtxt"
-	"github.com/jointwt/twtxt/internal"
-	"github.com/jointwt/twtxt/types/lextwt"
-	"github.com/jointwt/twtxt/types/retwt"
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/internal"
+	"git.mills.io/yarnsocial/yarn/types/lextwt"
+	"git.mills.io/yarnsocial/yarn/types/retwt"
 )
 
 var (

@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 )
 
 func red(s string) string {

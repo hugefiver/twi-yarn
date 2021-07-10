@@ -19,9 +19,9 @@ import (
 	"github.com/vcraescu/go-paginator"
 	"github.com/vcraescu/go-paginator/adapter"
 
-	"github.com/jointwt/twtxt"
-	"github.com/jointwt/twtxt/internal/passwords"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/internal/passwords"
+	"git.mills.io/yarnsocial/yarn/types"
 )
 
 // ContextKey ...

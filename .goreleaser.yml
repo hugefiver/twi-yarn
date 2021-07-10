@@ -6,8 +6,8 @@ builds:
     flags: -tags "static_build"
     ldflags: >-
       -w
-      -X github.com/jointwt/twtxt.Version={{.Version}}
-      -X github.com/jointwt/twtxt.Commit={{.Commit}}
+      -X git.mills.io/yarnsocial/yarn.Version={{.Version}}
+      -X git.mills.io/yarnsocial/yarn.Commit={{.Commit}}
     env:
       - CGO_ENABLED=0
     goos:

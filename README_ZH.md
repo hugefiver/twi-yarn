@@ -5,15 +5,15 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/prologic/twtxt)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/prologic/twtxt)
 
-![](https://github.com/jointwt/twtxt/workflows/Coverage/badge.svg)
-![](https://github.com/jointwt/twtxt/workflows/Docker/badge.svg)
-![](https://github.com/jointwt/twtxt/workflows/Go/badge.svg)
-![](https://github.com/jointwt/twtxt/workflows/ReviewDog/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/Coverage/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/Docker/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/Go/badge.svg)
+![](https://git.mills.io/yarnsocial/yarn/workflows/ReviewDog/badge.svg)
 
 [![Go Report Card](https://goreportcard.com/badge/jointwt/twtxt)](https://goreportcard.com/report/jointwt/twtxt)
 [![codebeat badge](https://codebeat.co/badges/15fba8a5-3044-4f40-936f-9e0f5d5d1fd9)](https://codebeat.co/projects/github-com-prologic-twtxt-master)
-[![GoDoc](https://godoc.org/github.com/jointwt/twtxt?status.svg)](https://godoc.org/github.com/jointwt/twtxt)
-[![GitHub license](https://img.shields.io/github/license/jointwt/twtxt.svg)](https://github.com/jointwt/twtxt)
+[![GoDoc](https://godoc.org/git.mills.io/yarnsocial/yarn?status.svg)](https://godoc.org/git.mills.io/yarnsocial/yarn)
+[![GitHub license](https://img.shields.io/github/license/jointwt/twtxt.svg)](https://git.mills.io/yarnsocial/yarn)
 
 📕 twtxt是一个类似Twitter™的自托管式分散式微博客平台。没有广告，没有跟踪（针对您的内容和数据）！
 
@@ -56,10 +56,10 @@ Goryon for Twt可在App Store和Play商店中使用。
 
 ### 预编译二进制包
 
-注意：在解决[问题＃250](https://github.com/jointwt/twtxt/issues/250)之前，请不要使用预构建的二进制文件。请从源代码构建或使用[Docker 镜像](https://hub.docker.com/jointwt)。谢谢你。♂‍♂️
+注意：在解决[问题＃250](https://git.mills.io/yarnsocial/yarn/issues/250)之前，请不要使用预构建的二进制文件。请从源代码构建或使用[Docker 镜像](https://hub.docker.com/jointwt)。谢谢你。♂‍♂️
 
 
-首先，请尝试使用[Releases](https://github.com/jointwt/twtxt/releases)页面上可用的预构建二进制包。
+首先，请尝试使用[Releases](https://git.mills.io/yarnsocial/yarn/releases)页面上可用的预构建二进制包。
 
 ### 使用 Homebrew
 
@@ -89,7 +89,7 @@ twt
 1. 克隆仓库 (_重要的_)
 
 ```console
-git clone https://github.com/jointwt/twtxt.git
+git clone https://git.mills.io/yarnsocial/yarn.git
 ```
 
 2. 安装依赖项 (_重要的_)
@@ -271,13 +271,13 @@ docker stack deploy -c twtxt.yml
 **赞助**
 
 - 成为赞助商  [赞助商](https://www.patreon.com/prologic)
-- Contribute! See [Issues](https://github.com/jointwt/twtxt/issues)
+- Contribute! See [Issues](https://git.mills.io/yarnsocial/yarn/issues)
 
 ## 贡献
 
 如果您对这个项目有兴趣, 我们很欢迎您通过以下几种方式做出贡献：
 
-- [提交问题](https://github.com/jointwt/twtxt/issues/new) -- 对于任何错误或想法，新功能或常规问题
+- [提交问题](https://git.mills.io/yarnsocial/yarn/issues/new) -- 对于任何错误或想法，新功能或常规问题
 -  提交一两个PR, 以改进完善项目!
 
 请阅读 [贡献准则](/CONTRIBUTING.md) 和 [开发文档](https://dev.twtxt.net) 或在 [/docs](/docs) 查看更多内容.
@@ -290,7 +290,7 @@ docker stack deploy -c twtxt.yml
 
 感谢所有为该项目做出贡献，进行了实战测试，在自己的项目或产品中使用过它，修复了错误，提高了性能甚至修复了文档中的小错字的人！谢谢您，继续为我们贡献力量！
 
-您可以找到一个[AUTHORS](/AUTHORS)文件，其中保存了该项目的贡献者列表。如果您提供公关，请考虑在其中添加您的名字。还有Github自己的贡献者[统计数据](https://github.com/jointwt/twtxt/graphs/contributors)。
+您可以找到一个[AUTHORS](/AUTHORS)文件，其中保存了该项目的贡献者列表。如果您提供公关，请考虑在其中添加您的名字。还有Github自己的贡献者[统计数据](https://git.mills.io/yarnsocial/yarn/graphs/contributors)。
 
 [![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/0)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/0)
 [![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/1)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/1)

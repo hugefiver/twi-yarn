@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/jointwt/twtxt/internal/session"
+	"git.mills.io/yarnsocial/yarn/internal/session"
 )
 
 var (

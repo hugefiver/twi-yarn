@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	securejoin "github.com/cyphar/filepath-securejoin"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 	"github.com/julienschmidt/httprouter"
 	log "github.com/sirupsen/logrus"
 )

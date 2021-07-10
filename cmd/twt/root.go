@@ -10,10 +10,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/jointwt/twtxt"
-	"github.com/jointwt/twtxt/client"
-	"github.com/jointwt/twtxt/types/lextwt"
-	"github.com/jointwt/twtxt/types/retwt"
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/client"
+	"git.mills.io/yarnsocial/yarn/types/lextwt"
+	"git.mills.io/yarnsocial/yarn/types/retwt"
 )
 
 var configFile string

@@ -10,9 +10,9 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/vcraescu/go-paginator"
 
-	"github.com/jointwt/twtxt"
-	"github.com/jointwt/twtxt/internal/session"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn"
+	"git.mills.io/yarnsocial/yarn/internal/session"
+	"git.mills.io/yarnsocial/yarn/types"
 	"github.com/justinas/nosurf"
 	"github.com/theplant-retired/timezones"
 )

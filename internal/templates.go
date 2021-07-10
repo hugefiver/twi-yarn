@@ -14,7 +14,7 @@ import (
 
 	"github.com/Masterminds/sprig"
 	humanize "github.com/dustin/go-humanize"
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 	log "github.com/sirupsen/logrus"
 )
 

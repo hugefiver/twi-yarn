@@ -64,7 +64,7 @@ test:
 	@$(GOCMD) test -v -cover -race ./...
 
 bench: bench-twtxt.txt
-	go test -race -benchtime=1x -cpu 16 -benchmem -bench "^(Benchmark)" github.com/jointwt/twtxt/types
+	go test -race -benchtime=1x -cpu 16 -benchmem -bench "^(Benchmark)" git.mills.io/yarnsocial/yarn/types
 
 bench-twtxt.txt:
 	curl -s https://twtxt.net/user/prologic/twtxt.txt > $@

@@ -3,7 +3,7 @@ package internal
 import (
 	"fmt"
 
-	"github.com/jointwt/twtxt/types"
+	"git.mills.io/yarnsocial/yarn/types"
 	"github.com/robfig/cron"
 	log "github.com/sirupsen/logrus"
 )

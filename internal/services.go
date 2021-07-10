@@ -16,13 +16,13 @@ import (
 	"time"
 
 	"github.com/emersion/go-message"
-	"github.com/jointwt/twtxt/internal/passwords"
+	"git.mills.io/yarnsocial/yarn/internal/passwords"
 	"github.com/marcinwyszynski/popart"
 	"github.com/prologic/smtpd"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/jointwt/twtxt"
+	"git.mills.io/yarnsocial/yarn"
 )
 
 func parseAddresses(addrs []string) ([]*mail.Address, error) {
