@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/prologic/bitcask"
+	"git.mills.io/prologic/bitcask"
 	log "github.com/sirupsen/logrus"
 
 	"git.mills.io/yarnsocial/yarn/internal/session"

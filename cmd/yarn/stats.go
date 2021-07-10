@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/prologic/go-gopher"
+	"git.mills.io/prologic/go-gopher"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 

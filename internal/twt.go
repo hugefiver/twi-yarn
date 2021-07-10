@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	read_file_last_line "github.com/prologic/read-file-last-line"
+	read_file_last_line "git.mills.io/prologic/read-file-last-line"
 	log "github.com/sirupsen/logrus"
 
 	"git.mills.io/yarnsocial/yarn/types"

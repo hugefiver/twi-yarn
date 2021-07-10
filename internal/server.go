@@ -15,17 +15,16 @@ import (
 	"syscall"
 	"time"
 
+	"git.mills.io/prologic/observe"
 	"github.com/NYTimes/gziphandler"
 	"github.com/andyleap/microformats"
 	humanize "github.com/dustin/go-humanize"
 	"github.com/gabstv/merger"
 	"github.com/justinas/nosurf"
-	"github.com/prologic/observe"
 	"github.com/robfig/cron"
 	log "github.com/sirupsen/logrus"
 	"github.com/unrolled/logger"
 
-	"git.mills.io/yarnsocial/yarn"
 	"git.mills.io/yarnsocial/yarn/internal/auth"
 	"git.mills.io/yarnsocial/yarn/internal/passwords"
 	"git.mills.io/yarnsocial/yarn/internal/session"
