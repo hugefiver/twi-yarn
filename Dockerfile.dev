@@ -38,7 +38,7 @@ COPY ./internal/passwords/*.go ./internal/passwords/
 COPY ./internal/webmention/*.go ./internal/webmention/
 COPY ./types/*.go ./types/
 COPY ./types/retwt/*.go ./types/retwt/
-COPY ./cmd/twtd/*.go ./cmd/twtd/
+COPY ./cmd/yarnd/*.go ./cmd/yarnd/
 
 # Build server binary
 RUN make server DEBUG=1
@@ -48,4 +48,4 @@ VOLUME /src/data
 # force cgo resolver
 ENV GODEBUG=netdns=cgo
 
-CMD ["./twtd", "-D", "-O", "-R"]
+CMD ["./yarnd", "-D", "-O", "-R"]

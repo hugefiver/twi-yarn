@@ -69,7 +69,7 @@ available on the [Releases](https://git.mills.io/yarnsocial/yarn/releases) page.
 ### Using Homebrew
 
 We provide [Homebrew](https://brew.sh) formulae for macOS users for both the
-command-line client (`twt`) as well as the server (`twtd`).
+command-line client (`yarn`) as well as the server (`yarnd`).
 
 ```console
 brew tap jointwt/twtxt
@@ -79,13 +79,13 @@ brew install twtxt
 Run the server:
 
 ```console
-twtd
+yarnd
 ```
 
 Run the command-line client:
 
 ```console
-twt
+yarn
 ```
 
 ### Building from source
@@ -137,7 +137,7 @@ gmake
 1. Login to  your [Twt.social](https://twt.social) pod:
 
 ```#!console
-$ ./twt login
+$ ./yarn login
 INFO[0000] Using config file: /Users/prologic/.twt.yaml
 Username:
 ```
@@ -145,7 +145,7 @@ Username:
 2. Viewing your timeline
 
 ```#!console
-$ ./twt timeline
+$ ./yarn timeline
 INFO[0000] Using config file: /Users/prologic/.twt.yaml
 > prologic (50 minutes ago)
 Hey @rosaelefanten 👋 Nice to see you have a Twtxt feed! Saw your [Tweet](https://twitter.com/koehr_in/status/1326914925348982784?s=20) (_or at least I assume it was yours?_). Never heard of `aria2c` till now! 🤣 TIL
@@ -157,9 +157,9 @@ Angry Techn Writers ‣ https://dilbert.com/strip/2020-11-14
 3. Making a Twt (_post_):
 
 ```#!console
-$ ./twt post
+$ ./yarn post
 INFO[0000] Using config file: /Users/prologic/.twt.yaml
-Testing `twt` the command-line client
+Testing `yarn` the command-line client
 INFO[0015] posting twt...
 INFO[0016] post successful
 ```
@@ -176,10 +176,10 @@ Then visit: http://localhost:8000/
 
 ### Web App
 
-Run twtd:
+Run yarnd:
 
 ```console
-twtd -R
+yarnd -R
 ```
 
 __NOTE:__ Registrations are disabled by default so hence the `-R` flag above.
@@ -189,8 +189,8 @@ Then visit: http://localhost:8000/
 You can configure other options by specifying them on the command-line:
 
 ```console
-$ ./twtd --help
-Usage of ./twtd:
+$ ./yarnd --help
+Usage of ./yarnd:
   -E, --admin-email string          default admin user email (default "support@twt.social")
   -N, --admin-name string           default admin user name (default "Administrator")
   -A, --admin-user string           default admin user to use (default "admin")

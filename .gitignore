@@ -14,8 +14,8 @@
 /twtd
 /.envrc
 
-/cmd/twt/twt
-/cmd/twtd/twtd
+/cmd/yarn/yarn
+/cmd/yarnd/yarnd
 
 /data/msgs
 /data/cache

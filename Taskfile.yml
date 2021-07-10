@@ -5,8 +5,8 @@ version: '3'
 output: 'prefixed'
 
 vars:
-  TwtdSvc: twtd
-  TwtdExe: twtd{{exeExt}}
+  YarnSvc: yard
+  YarnExe: yard{{exeExt}}
 
 tasks:
   default:
@@ -14,21 +14,21 @@ tasks:
       - task -l
     silent: true
 
-  twtd:
-    desc: run twtd service
+  yard:
+    desc: run yard service
     cmds:
-      - task: run-twtd
+      - task: run-yard
 
 
-  build-twtd:
-    desc: build twtd service
-    deps: [twtd-css, twtd-js, tr-merge]
+  build-yard:
+    desc: build yard service
+    deps: [yard-css, yard-js, tr-merge]
     cmds:
-      - echo "{{.TwtdExe}} building..."
-      - go build -v -o {{.TwtdExe}} -ldflags "-w -X {{.Module}}.Version={{.Version}} -X {{.Module}}.Commit={{.Commit}}" cmd/{{.TwtdSvc}}/main.go
-      - echo "{{.TwtdExe}} built."
+      - echo "{{.YarnExe}} building..."
+      - go build -v -o {{.YarnExe}} -ldflags "-w -X {{.Module}}.Version={{.Version}} -X {{.Module}}.Commit={{.Commit}}" cmd/{{.YarnSvc}}/main.go
+      - echo "{{.YarnExe}} built."
     generates:
-      - '{{.TwtdExe}}'
+      - '{{.YarnExe}}'
     sources:
       - '**/*.go'
     method: none
@@ -41,14 +41,14 @@ tasks:
         sh: go list
     silent: false
 
-  run-twtd:
+  run-yard:
     cmds:
-        - ./twtd --cookie-secret abc --magiclink-secret abc --api-signing-key abc -R --debug --base-url http://localhost:8000 --bind 127.0.0.1:8000 --twts-per-page 5 --name twtxt.cc
-    deps: [build-twtd]
-    desc: run twtd service
+        - ./yard --cookie-secret abc --magiclink-secret abc --api-signing-key abc -R --debug --base-url http://localhost:8000 --bind 127.0.0.1:8000 --twts-per-page 5 --name twtxt.cc
+    deps: [build-yard]
+    desc: run yard service
     silent: false
 
-  twtd-css:
+  yard-css:
     cmds:
       - minify -b -o ./internal/static/css/twtxt.min.css ./internal/static/css/[0-9]*-*.css
     sources:
@@ -56,7 +56,7 @@ tasks:
     generates:
       - internal/static/css/twtxt.min.css
 
-  twtd-js:
+  yard-js:
     cmds:
       - minify -b -o ./internal/static/js/twtxt.min.js ./internal/static/js/[0-9]*-*.js
     sources:
@@ -78,15 +78,15 @@ tasks:
 
   release:
     desc: release
-    deps: [build-twtd]
+    deps: [build-yard]
     cmds:
       # - mkdir -pv ./release/internal/{static,langs}
       - mkdir -pv ./release/internal/static/{css,js}
-      - cp -Rpfv ./{{.TwtdExe}} ./release/
+      - cp -Rpfv ./{{.YarnExe}} ./release/
       - cp -Rpfv ./internal/static/css/twtxt.min.css ./release/internal/static/css/
       - cp -Rpfv ./internal/static/js/twtxt.min.js ./release/internal/static/js/
       # - cp -Rpfv ./internal/langs/active.*.toml ./release/internal/langs/
-      - ./release/{{.TwtdExe}} --cookie-secret abc --magiclink-secret abc --api-signing-key abc -R --base-url http://localhost:8000 --bind 127.0.0.1:8000 --name twtxt.cc
+      - ./release/{{.YarnExe}} --cookie-secret abc --magiclink-secret abc --api-signing-key abc -R --base-url http://localhost:8000 --bind 127.0.0.1:8000 --name twtxt.cc
 
   clean:
     desc: clean

@@ -14,22 +14,22 @@ deps:
 
 dev : DEBUG=1
 dev : build
-	@./twt -v
-	./twtd -D -O -R $(FLAGS)
+	@./yarn -v
+	./yarnd -D -O -R $(FLAGS)
 
 cli:
 	@$(GOCMD) build -tags "netgo static_build" -installsuffix netgo \
 		-ldflags "-w \
 		-X $(shell go list).Version=$(VERSION) \
 		-X $(shell go list).Commit=$(COMMIT)" \
-		./cmd/twt/...
+		./cmd/yarn/...
 
 server: generate
 	@$(GOCMD) build -tags "netgo static_build" -installsuffix netgo \
 		-ldflags "-w \
 		-X $(shell go list).Version=$(VERSION) \
 		-X $(shell go list).Commit=$(COMMIT)" \
-		./cmd/twtd/...
+		./cmd/yarnd/...
 
 build: cli server
 
@@ -42,8 +42,8 @@ generate:
 	fi
 
 install: build
-	@$(GOCMD) install ./cmd/twt/...
-	@$(GOCMD) install ./cmd/twtd/...
+	@$(GOCMD) install ./cmd/yarn/...
+	@$(GOCMD) install ./cmd/yarnd/...
 
 ifeq ($(PUBLISH), 1)
 image:

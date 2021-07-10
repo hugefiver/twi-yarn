@@ -63,7 +63,7 @@ Goryon for Twt可在App Store和Play商店中使用。
 
 ### 使用 Homebrew
 
-我们为 MacOS 用户提供了 [Homebrew](https://brew.sh) 包, 包含命令行客户(`twt`)和服务端(`twtd`)程序 
+我们为 MacOS 用户提供了 [Homebrew](https://brew.sh) 包, 包含命令行客户(`yarn`)和服务端(`yarnd`)程序 
 
 ```console
 brew tap jointwt/twtxt
@@ -73,7 +73,7 @@ brew install twtxt
 运行服务端:
 
 ```console
-twtd
+yarnd
 ```
 
 运行客户端:
@@ -137,7 +137,7 @@ Username:
 2. 查看您的时间线 
 
 ```#!console
-$ ./twt timeline
+$ ./yarn timeline
 INFO[0000] Using config file: /Users/prologic/.twt.yaml
 > prologic (50 minutes ago)
 Hey @rosaelefanten 👋 Nice to see you have a Twtxt feed! Saw your [Tweet](https://twitter.com/koehr_in/status/1326914925348982784?s=20) (_or at least I assume it was yours?_). Never heard of `aria2c` till now! 🤣 TIL
@@ -149,9 +149,9 @@ Angry Techn Writers ‣ https://dilbert.com/strip/2020-11-14
 3. 发表推文 (_post_):
 
 ```#!console
-$ ./twt post
+$ ./yarn post
 INFO[0000] Using config file: /Users/prologic/.twt.yaml
-Testing `twt` the command-line client
+Testing `yarn` the command-line client
 INFO[0015] posting twt...
 INFO[0016] post successful
 ```
@@ -168,10 +168,10 @@ docker-compose up -d
 
 ### Web App
 
-运行 twtd:
+运行 yarnd:
 
 ```console
-twtd -R
+yarnd -R
 ```
 
 __NOTE:__ 默认是禁止用户注册的, 使用 `-R` 标记打开注册选项 
@@ -181,8 +181,8 @@ __NOTE:__ 默认是禁止用户注册的, 使用 `-R` 标记打开注册选项
 下面是一些命令行客户端的配置项:
 
 ```console
-$ ./twtd --help
-Usage of ./twtd:
+$ ./yarnd --help
+Usage of ./yarnd:
   -E, --admin-email string          default admin user email (default "support@twt.social")
   -N, --admin-name string           default admin user name (default "Administrator")
   -A, --admin-user string           default admin user to use (default "admin")

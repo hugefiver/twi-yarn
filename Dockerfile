@@ -42,7 +42,7 @@ COPY ./internal/webmention/*.go ./internal/webmention/
 COPY ./types/*.go ./types/
 COPY ./types/retwt/*.go ./types/retwt/
 COPY ./types/lextwt/*.go ./types/lextwt/
-COPY ./cmd/twtd/*.go ./cmd/twtd/
+COPY ./cmd/yarnd/*.go ./cmd/yarnd/
 
 # Version/Commit (there there is no .git in Docker build context)
 # NOTE: This is fairly low down in the Dockerfile instructions so
@@ -66,7 +66,7 @@ VOLUME /data
 # force cgo resolver
 ENV GODEBUG=netdns=cgo
 
-COPY --from=build /src/twtd /twtd
+COPY --from=build /src/yarnd /yarnd
 
-ENTRYPOINT ["/twtd"]
+ENTRYPOINT ["/yarnd"]
 CMD [""]

@@ -8,11 +8,11 @@ Dockerfile
 
 /dist
 
-/twt
-/twtd
+/yarn
+/yarnd
 
-/cmd/twt/twt
-/cmd/twtd/twtd
+/cmd/yarn/yarn
+/cmd/yarnd/yarnd
 
 /data/cache
 /data/feeds/*
