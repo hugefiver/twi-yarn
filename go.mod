@@ -3,6 +3,11 @@ module git.mills.io/yarnsocial/yarn
 go 1.16
 
 require (
+	git.mills.io/prologic/bitcask v0.3.9
+	git.mills.io/prologic/go-gopher v0.0.0-20201022213256-724979970b3f
+	git.mills.io/prologic/observe v0.0.0-20181231082615-747b185a0928
+	git.mills.io/prologic/read-file-last-line v0.0.0-20200806014221-326f63458987
+	git.mills.io/prologic/smtpd v0.0.0-20201215080427-fd3f94c87eb7
 	github.com/Masterminds/goutils v1.1.0 // indirect
 	github.com/Masterminds/semver v1.5.0 // indirect
 	github.com/Masterminds/sprig v2.22.0+incompatible
@@ -58,11 +63,6 @@ require (
 	github.com/nullrocks/identicon v0.0.0-20180626043057-7875f45b0022
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/pelletier/go-toml v1.8.1 // indirect
-	github.com/prologic/bitcask v0.3.9
-	github.com/prologic/go-gopher v0.0.0-20201022213256-724979970b3f
-	github.com/prologic/observe v0.0.0-20181231082615-747b185a0928
-	github.com/prologic/read-file-last-line v0.0.0-20200806014221-326f63458987
-	github.com/prologic/smtpd v0.0.0-20201215080427-fd3f94c87eb7
 	github.com/prometheus/client_golang v1.9.0 // indirect
 	github.com/rainycape/unidecode v0.0.0-20150907023854-cb7f23ec59be // indirect
 	github.com/renstrom/shortuuid v3.0.0+incompatible
