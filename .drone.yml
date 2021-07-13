@@ -3,7 +3,7 @@ kind: pipeline
 name: default
 
 steps:
-  - name: build
+  - name: build & run tests
     image: r.mills.io/prologic/golang-alpine-ffmpeg:latest
     volumes:
       - name: gomodcache
@@ -15,7 +15,20 @@ steps:
       - make deps
       - make build
       - make test
-      - make image PUBLISH=1
+
+  - name: build & publish docker image
+    image: plugins/docker
+    settings:
+      registry: r.mills.io
+      repo: r.mills.io/prologic/yarn
+      tags: latest
+      build_args:
+        - VERSION=${DRONE_SEMVER_SHORT}
+        - COMMIT=${DRONE_COMMIT_SHA:0:8}
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
 
   - name: notify
     image: plugins/webhook
