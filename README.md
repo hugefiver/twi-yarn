@@ -1,21 +1,14 @@
-# twtxt
+# yarn
 
-![GitHub All Releases](https://img.shields.io/github/downloads/jointwt/twtxt/total)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/prologic/twtxt)
-![Docker Pulls](https://img.shields.io/docker/pulls/prologic/twtxt)
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/prologic/twtxt)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/prologic/yarn)
+![Docker Pulls](https://img.shields.io/docker/pulls/prologic/yarn)
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/prologic/yarn)
 
-![](https://git.mills.io/yarnsocial/yarn/workflows/Coverage/badge.svg)
-![](https://git.mills.io/yarnsocial/yarn/workflows/Docker/badge.svg)
-![](https://git.mills.io/yarnsocial/yarn/workflows/Go/badge.svg)
-![](https://git.mills.io/yarnsocial/yarn/workflows/ReviewDog/badge.svg)
+[![Build Status](https://ci.mills.io/api/badges/yarnsocial/homebrew-yarn/status.svg)](https://ci.mills.io/yarnsocial/homebrew-yarn)
 
-[![Go Report Card](https://goreportcard.com/badge/jointwt/twtxt)](https://goreportcard.com/report/jointwt/twtxt)
-[![codebeat badge](https://codebeat.co/badges/15fba8a5-3044-4f40-936f-9e0f5d5d1fd9)](https://codebeat.co/projects/github-com-prologic-twtxt-master)
-[![GoDoc](https://godoc.org/git.mills.io/yarnsocial/yarn?status.svg)](https://godoc.org/git.mills.io/yarnsocial/yarn)
-[![GitHub license](https://img.shields.io/github/license/jointwt/twtxt.svg)](https://git.mills.io/yarnsocial/yarn)
+[![GoDoc](https://pkg.go.dev/git.mills.io/yarnsocial/yarn?status.svg)](https://pkg.go.dev/git.mills.io/yarnsocial/yarn)
 
-📕 twtxt is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
+📕 yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
 
 ![](https://twtxt.net/media/XsLsDHuisnXcL6NuUkYguK.png)
 
