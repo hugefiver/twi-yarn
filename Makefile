@@ -47,14 +47,11 @@ install: build
 
 ifeq ($(PUBLISH), 1)
 image:
-	@docker build --build-arg VERSION="$(VERSION)" --build-arg COMMIT="$(COMMIT)" -t jointwt/twtxt .
-	@docker push jointwt/twtxt
-	# TODO: Remove at some point
-	@docker tag jointwt/twtxt prologic/twtxt
-	@docker push prologic/twtxt
+	@docker build --build-arg VERSION="$(VERSION)" --build-arg COMMIT="$(COMMIT)" -t prologic/yarn .
+	@docker push prologic/yarn
 else
 image:
-	@docker build --build-arg VERSION="$(VERSION)" --build-arg COMMIT="$(COMMIT)" -t jointwt/twtxt .
+	@docker build --build-arg VERSION="$(VERSION)" --build-arg COMMIT="$(COMMIT)" -t prologic/yarn .
 endif
 
 release:
