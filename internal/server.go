@@ -678,13 +678,9 @@ func NewServer(bind string, options ...Option) (*Server, error) {
 	if err != nil {
 		log.WithError(err).Error("error loading blogs cache (re-creating)")
 		blogs = NewBlogsCache()
-		log.Info("updating blogs cache")
-		blogs.UpdateBlogs(config)
 	}
-	if len(blogs.Blogs) == 0 {
-		log.Info("empty blogs cache, updating...")
-		blogs.UpdateBlogs(config)
-	}
+	log.Info("updating blogs cache")
+	blogs.UpdateBlogs(config)
 
 	msgs, err := LoadMessagesCache(config.Data)
 	if err != nil {
