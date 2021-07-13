@@ -14,6 +14,8 @@ steps:
     commands:
       - make deps
       - make build
+      - make test
+      - make image PUBLISH=1
 
   - name: notify
     image: plugins/webhook
@@ -24,9 +26,6 @@ steps:
       status:
         - success
         - failure
-
-image_pull_secrets:
-  - dockerconfigjson
 
 volumes:
   - name: gomodcache
