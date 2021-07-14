@@ -1,11 +1,6 @@
 # yarn
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/prologic/yarn)
-![Docker Pulls](https://img.shields.io/docker/pulls/prologic/yarn)
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/prologic/yarn)
-
-[![Build Status](https://ci.mills.io/api/badges/yarnsocial/homebrew-yarn/status.svg)](https://ci.mills.io/yarnsocial/homebrew-yarn)
-
+[![Build Status](https://ci.mills.io/api/badges/yarnsocial/yarn/status.svg)](https://ci.mills.io/yarnsocial/yarn)
 [![GoDoc](https://pkg.go.dev/git.mills.io/yarnsocial/yarn?status.svg)](https://pkg.go.dev/git.mills.io/yarnsocial/yarn)
 
 📕 yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
