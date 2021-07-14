@@ -19,6 +19,7 @@ steps:
   - name: build & publish docker image
     image: r.mills.io/drone_plugins/docker
     settings:
+      debug: true
       registry: r.mills.io
       repo: r.mills.io/prologic/yarn
       tags: latest
