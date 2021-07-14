@@ -24,7 +24,7 @@ steps:
       repo: r.mills.io/prologic/yarn
       tags: latest
       build_args:
-        - VERSION=${DRONE_TAG}}
+        - VERSION=${DRONE_TAG}
         - COMMIT=${DRONE_COMMIT_SHA:0:8}
       username:
         from_secret: docker_username
