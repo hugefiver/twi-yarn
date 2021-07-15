@@ -3,7 +3,7 @@ module git.mills.io/yarnsocial/yarn
 go 1.16
 
 require (
-	git.mills.io/prologic/bitcask v0.3.12
+	git.mills.io/prologic/bitcask v0.3.13
 	git.mills.io/prologic/go-gopher v0.0.0-20210712135410-b7ebb55feece
 	git.mills.io/prologic/observe v0.0.0-20210710122508-45e27ec8bb27
 	git.mills.io/prologic/read-file-last-line v0.0.0-20210710073401-af293d63a6d0
@@ -31,6 +31,7 @@ require (
 	github.com/gabstv/merger v1.0.1
 	github.com/go-mail/mail v2.3.1+incompatible
 	github.com/goccy/go-yaml v1.8.10
+	github.com/gofrs/flock v0.8.1 // indirect
 	github.com/gomarkdown/markdown v0.0.0-20210514010506-3b9f47219fe7
 	github.com/gorilla/feeds v1.1.1
 	github.com/goware/urlx v0.3.1
@@ -78,7 +79,7 @@ require (
 	github.com/wblakecaldwell/profiler v0.0.0-20150908040756-6111ef1313a1
 	github.com/writeas/slug v1.2.0
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
-	golang.org/x/exp v0.0.0-20210712160552-8235cf48b5f6 // indirect
+	golang.org/x/exp v0.0.0-20210715201039-d37aa40e8013 // indirect
 	golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d // indirect
 	golang.org/x/net v0.0.0-20210614182718-04defd469f4e
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect

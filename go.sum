@@ -43,6 +43,8 @@ git.mills.io/prologic/bitcask v0.3.11 h1:naYCPZmPkVfnSYrCqoH7XHlH6aTWgHDLY0mjOLK
 git.mills.io/prologic/bitcask v0.3.11/go.mod h1:2BJo8q5zDsSRgKohZsdva5b7/22NSXqZpPfSs7knRy0=
 git.mills.io/prologic/bitcask v0.3.12 h1:FqeZBosQS8QitG6GkBkdbk1SbG9diPnSqd6JfDrl+iI=
 git.mills.io/prologic/bitcask v0.3.12/go.mod h1:2BJo8q5zDsSRgKohZsdva5b7/22NSXqZpPfSs7knRy0=
+git.mills.io/prologic/bitcask v0.3.13 h1:/NLY67o2lMm2ijEl1PHIt9Ce/7TAGcf/GSD6Z/GvlYo=
+git.mills.io/prologic/bitcask v0.3.13/go.mod h1:+V/mKdHFYzYop76TXbIRD2RGK1TKpoIOpe2nFflQKRg=
 git.mills.io/prologic/go-gopher v0.0.0-20210712135410-b7ebb55feece h1:0esmnntqeuM1iBgHH0HOeSynsLA1l28p2K3h/WZuIfQ=
 git.mills.io/prologic/go-gopher v0.0.0-20210712135410-b7ebb55feece/go.mod h1:EMXlYOIbYJQhPTtIltgaaHtCYDawV/HL0dYf8ShzAck=
 git.mills.io/prologic/observe v0.0.0-20210710122508-45e27ec8bb27 h1:vjDIORbr/Fp2ZXOGYXOHrSQUAYENGi1XPon8olIxvU4=
@@ -232,6 +234,9 @@ github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/me
 github.com/goccy/go-yaml v1.8.10 h1:XpBOLD8cmOZlLYjUFPqSZZ+Ubi4/UKxO2eXyhg5WuAA=
 github.com/goccy/go-yaml v1.8.10/go.mod h1:U/jl18uSupI5rdI2jmuCswEA2htH9eXfferR3KfscvA=
 github.com/godbus/dbus/v5 v5.0.4/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
+github.com/gofrs/flock v0.8.0/go.mod h1:F1TvTiK9OcQqauNUHlbJvyl9Qa1QvF/gOUDKA14jxHU=
+github.com/gofrs/flock v0.8.1 h1:+gYjHKf32LDeiEEFhQaotPbLuUXjY5ZqxKgXy7n59aw=
+github.com/gofrs/flock v0.8.1/go.mod h1:F1TvTiK9OcQqauNUHlbJvyl9Qa1QvF/gOUDKA14jxHU=
 github.com/gofrs/uuid v3.3.0+incompatible/go.mod h1:b2aQJv3Z4Fp6yNu3cdSllBxTCLRxnplIgP/c0N/04lM=
 github.com/gogo/googleapis v1.1.0/go.mod h1:gf4bu3Q80BeJ6H1S1vYPm8/ELATdvryBaNFGgqEef3s=
 github.com/gogo/protobuf v1.1.1/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=
@@ -733,6 +738,8 @@ golang.org/x/exp v0.0.0-20210709195130-ecdcf02a369a h1:TMV3jNlwhcgu55/FCDIsLh/yh
 golang.org/x/exp v0.0.0-20210709195130-ecdcf02a369a/go.mod h1:DVyR6MI7P4kEQgvZJSj1fQGrWIi2RzIrfYWycwheUAc=
 golang.org/x/exp v0.0.0-20210712160552-8235cf48b5f6 h1:BirTA3tKOwozXCBbQzcck0IT0vGXDL470JjU2JhfFm8=
 golang.org/x/exp v0.0.0-20210712160552-8235cf48b5f6/go.mod h1:DVyR6MI7P4kEQgvZJSj1fQGrWIi2RzIrfYWycwheUAc=
+golang.org/x/exp v0.0.0-20210715201039-d37aa40e8013 h1:Jp57DBw4K7mimZNA3F9f7CndVcUt4kJjmyJf2rzJHoI=
+golang.org/x/exp v0.0.0-20210715201039-d37aa40e8013/go.mod h1:DVyR6MI7P4kEQgvZJSj1fQGrWIi2RzIrfYWycwheUAc=
 golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=
 golang.org/x/image v0.0.0-20190802002840-cff245a6509b/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
 golang.org/x/image v0.0.0-20200618115811-c13761719519/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
