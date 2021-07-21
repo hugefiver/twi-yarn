@@ -3,7 +3,7 @@ module git.mills.io/yarnsocial/yarn
 go 1.16
 
 require (
-	git.mills.io/prologic/bitcask v0.3.13
+	git.mills.io/prologic/bitcask v0.3.14
 	git.mills.io/prologic/go-gopher v0.0.0-20210712135410-b7ebb55feece
 	git.mills.io/prologic/observe v0.0.0-20210710122508-45e27ec8bb27
 	git.mills.io/prologic/read-file-last-line v0.0.0-20210710073401-af293d63a6d0
