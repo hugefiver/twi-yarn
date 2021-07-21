@@ -232,7 +232,7 @@ func main() {
 	parseArgs()
 
 	if version {
-		fmt.Printf("yarnd v%s", yarn.FullVersion())
+		fmt.Printf("yarnd %s", yarn.FullVersion())
 		os.Exit(0)
 	}
 
