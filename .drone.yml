@@ -6,6 +6,7 @@ steps:
   - name: build-and-test
     image: r.mills.io/prologic/golang-alpine-ffmpeg:latest
     commands:
+      - make deps
       - make build
       - make test
 
