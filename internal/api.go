@@ -628,7 +628,7 @@ func (a *API) FollowEndpoint() httprouter.Handle {
 						"FOLLOW: @<%s %s> from @<%s %s> using %s/%s",
 						followee.Username, URLForUser(a.config.BaseURL, followee.Username),
 						user.Username, URLForUser(a.config.BaseURL, user.Username),
-						"twtxt", yarn.FullVersion(),
+						"yarnd", yarn.FullVersion(),
 					),
 				); err != nil {
 					log.WithError(err).Warnf("error appending special FOLLOW post")
@@ -656,7 +656,7 @@ func (a *API) FollowEndpoint() httprouter.Handle {
 						"FOLLOW: @<%s %s> from @<%s %s> using %s/%s",
 						feed.Name, URLForUser(a.config.BaseURL, feed.Name),
 						user.Username, URLForUser(a.config.BaseURL, user.Username),
-						"twtxt", yarn.FullVersion(),
+						"yarnd", yarn.FullVersion(),
 					),
 				); err != nil {
 					log.WithError(err).Warnf("error appending special FOLLOW post")
@@ -730,7 +730,7 @@ func (a *API) UnfollowEndpoint() httprouter.Handle {
 						"UNFOLLOW: @<%s %s> from @<%s %s> using %s/%s",
 						followee.Username, URLForUser(a.config.BaseURL, followee.Username),
 						user.Username, URLForUser(a.config.BaseURL, user.Username),
-						"twtxt", yarn.FullVersion(),
+						"yarnd", yarn.FullVersion(),
 					),
 				); err != nil {
 					log.WithError(err).Warnf("error appending special FOLLOW post")

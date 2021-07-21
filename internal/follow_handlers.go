@@ -93,7 +93,7 @@ func (s *Server) FollowHandler() httprouter.Handle {
 						"FOLLOW: @<%s %s> from @<%s %s> using %s/%s",
 						followee.Username, URLForUser(s.config.BaseURL, followee.Username),
 						user.Username, URLForUser(s.config.BaseURL, user.Username),
-						"twtxt", yarn.FullVersion(),
+						"yarnd", yarn.FullVersion(),
 					),
 				); err != nil {
 					log.WithError(err).Warnf("error appending special FOLLOW post")
@@ -125,7 +125,7 @@ func (s *Server) FollowHandler() httprouter.Handle {
 						"FOLLOW: @<%s %s> from @<%s %s> using %s/%s",
 						feed.Name, URLForUser(s.config.BaseURL, feed.Name),
 						user.Username, URLForUser(s.config.BaseURL, user.Username),
-						"twtxt", yarn.FullVersion(),
+						"yarnd", yarn.FullVersion(),
 					),
 				); err != nil {
 					log.WithError(err).Warnf("error appending special FOLLOW post")
@@ -260,7 +260,7 @@ func (s *Server) UnfollowHandler() httprouter.Handle {
 						"UNFOLLOW: @<%s %s> from @<%s %s> using %s/%s",
 						followee.Username, URLForUser(s.config.BaseURL, followee.Username),
 						user.Username, URLForUser(s.config.BaseURL, user.Username),
-						"twtxt", yarn.FullVersion(),
+						"yarnd", yarn.FullVersion(),
 					),
 				); err != nil {
 					log.WithError(err).Warnf("error appending special FOLLOW post")
