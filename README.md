@@ -3,56 +3,42 @@
 [![Build Status](https://ci.mills.io/api/badges/yarnsocial/yarn/status.svg)](https://ci.mills.io/yarnsocial/yarn)
 [![GoDoc](https://pkg.go.dev/git.mills.io/yarnsocial/yarn?status.svg)](https://pkg.go.dev/git.mills.io/yarnsocial/yarn)
 
-📕 yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
+📕 yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform.
+
+- No ads
+- No tracking
+- Your content
+- Your data!
 
 ![](https://twtxt.net/media/XsLsDHuisnXcL6NuUkYguK.png)
 
-> Technically `twtxt` is a multi-user [twtxt](https://twtxt.readthedocs.io/en/latest/) client in the form
-> of a web app and api. It supports multiple users and
-> also hosts user feeds directly and provides a familiar "social" experience with minimal user profiles.
+> Technically `yarnd` is a multi-user
+> [twtxt](https://twtxt.readthedocs.io/en/latest/) client in the form  of a
+> web app and api. It supports multiple users and also hosts user feeds
+> directly and provides a familiar "social" experience with minimal user
+> profiles.
 >
-> It also supports "rich" text by utilising Markdown as well as multimedia such as photos, videos and even audio.
->
-> There is also a set of [Mobile Apps](https://jointwt.org/goryon/) available for both the App Store and Play Store.
+> It also supports "rich" text by utilising Markdown as well as multimedia
+> such as photos, videos and even audio.
 
 There is also a publicly (_free_) available Pod available at:
 
 - https://twtxt.net/
 
-> __NOTE:__ I, [James Mills](https://github.com/prologic), run this first (_of which I hope to be many_) `twtxt` instance on pretty cheap hardware on a limited budget. Please use it fairly so everyone can enjoy using it equally! Please be sure to read the [/privacy](https://twtxt.net/privacy) policy before signing up (_pretty straight forward_) and happy Twt'ing! 🤗
+> __NOTE:__ I, [James Mills](https://github.com/prologic), run this first
+> (_of which I hope to be many_) `twtxt` instance on pretty cheap hardware on
+> a limited budget. Please use it fairly so everyone can enjoy using it
+> equally! Please be sure to read the [/privacy](https://twtxt.net/privacy)
+> policy before signing up (_pretty straight forward_) and happy Twt'ing! 🤗
 
-> **[Sponsor](#Sponsor)** this project to support the development of new features, improving existings ones and fix bugs!
+> **[Sponsor](#Sponsor)** this project to support the development of new
+> features, improving existings ones and fix bugs!
 > Or contact [Support](https://twtxt.net) for help with running your own Pod!
 > Or host your own Twtxt feed and support our [Extensions](https://dev.twtxt.net).
 
 ![Demo_1](https://user-images.githubusercontent.com/15314237/90351548-cac74b80-dffd-11ea-8288-b347af548465.gif)
 
-## Mobile Apps
-
-![](https://jointwt.org/goryon/images/logo.svg)
-
-Goryon for Twt available for both the App Store and Play Store.
-
-Install Goryon today on your mobile device [here](https://jointwt.org/goryon/)
-
-## Hosted Pods
-
-This project offers fully-managed, 1-click instances of this platform we call [Twt.social](https://twt.social) pods.
-
-Please visit [Twt.social](https://twt.social) to get your pod today!
-
-> __NOTE:__ As of 15th Aug 2020 ([comment](https://git.mills.io/yarnsocial/yarn/issues/87#issuecomment-674101304) [announcement](https://twtxt.net/twt/zauzpsrkzra) [blog](https://www.prologic.blog/2020/08/15/ann-twtsocial-is.html)), this is completely _FREE_ and we invite anyone to contact us for an invite code to be one of the first few pod owners!
-
 ## Installation
-
-### Pre-built Binaries
-
-__NOTE:__ Please don't use the pre-built binaries until [Issue #250](https://git.mills.io/yarnsocial/yarn/issues/250) is resolved.
-          Please build from source or use the [Docker Images](https://hub.docker.com/jointwt).
-          Thank you. 🙇‍♂️
-
-As a first point, please try to use one of the pre-built binaries that are
-available on the [Releases](https://git.mills.io/yarnsocial/yarn/releases) page.
 
 ### Using Homebrew
 
@@ -60,8 +46,8 @@ We provide [Homebrew](https://brew.sh) formulae for macOS users for both the
 command-line client (`yarn`) as well as the server (`yarnd`).
 
 ```console
-brew tap jointwt/twtxt
-brew install twtxt
+brew tap yarnsocial/yarn https://git.mills.io/yarnsocial/homebrew-yarn.git
+brew install yarn
 ```
 
 Run the server:
@@ -94,8 +80,8 @@ Linux, macOS:
 make deps
 ```
 Note that in order to get the media upload functions to work, you need to
-install ffmpeg and its associated `-dev` packages. Consult your distribution's package
-repository for availability and names.
+install ffmpeg and its associated `-dev` packages. Consult your distribution's
+package repository for availability and names.
 
 FreeBSD:
 
@@ -122,11 +108,11 @@ gmake
 
 ### Command-line Client
 
-1. Login to  your [Twt.social](https://twt.social) pod:
+1. Login to  your pod:
 
 ```#!console
 $ ./yarn login
-INFO[0000] Using config file: /Users/prologic/.twt.yaml
+INFO[0000] Using config file: /Users/prologic/.yarn.yaml
 Username:
 ```
 
@@ -134,7 +120,7 @@ Username:
 
 ```#!console
 $ ./yarn timeline
-INFO[0000] Using config file: /Users/prologic/.twt.yaml
+INFO[0000] Using config file: /Users/prologic/.yarn.yaml
 > prologic (50 minutes ago)
 Hey @rosaelefanten 👋 Nice to see you have a Twtxt feed! Saw your [Tweet](https://twitter.com/koehr_in/status/1326914925348982784?s=20) (_or at least I assume it was yours?_). Never heard of `aria2c` till now! 🤣 TIL
 
@@ -142,11 +128,11 @@ Hey @rosaelefanten 👋 Nice to see you have a Twtxt feed! Saw your [Tweet](http
 Angry Techn Writers ‣ https://dilbert.com/strip/2020-11-14
 ```
 
-3. Making a Twt (_post_):
+3. Posting a Yarn (_post_):
 
 ```#!console
 $ ./yarn post
-INFO[0000] Using config file: /Users/prologic/.twt.yaml
+INFO[0000] Using config file: /Users/prologic/.yarn.yaml
 Testing `yarn` the command-line client
 INFO[0015] posting twt...
 INFO[0016] post successful
@@ -179,7 +165,7 @@ You can configure other options by specifying them on the command-line:
 ```console
 $ ./yarnd --help
 Usage of ./yarnd:
-  -E, --admin-email string          default admin user email (default "support@twt.social")
+  -E, --admin-email string          default admin user email (default "support@yarn.social")
   -N, --admin-name string           default admin user name (default "Administrator")
   -A, --admin-user string           default admin user to use (default "admin")
       --api-session-time duration   timeout for api tokens to expire (default 240h0m0s)
@@ -257,13 +243,8 @@ and uses the [Traefik](https://docs.traefik.io/) ingress load balancer so you mu
 also have that configured and running in your cluster appropriately.
 
 ```console
-docker stack deploy -c twtxt.yml
+docker stack deploy -c yarn.yml
 ```
-
-## In the News
-
-- 07-12-2020: [Console-30](https://console.substack.com/p/console-30) from the [Console](https://console.substack.com/) weekly newslsetter on open-source proejcts.
-- 30-11-2020: [Reddit post on r/golang](https://www.reddit.com/r/golang/comments/k3cmzl/twtxt_is_a_selfhosted_twitterlike_decentralised/)
 
 ## Sponsor
 
@@ -286,40 +267,15 @@ you can contribute:
 Please see the [Contributing Guidelines](/CONTRIBUTING.md) and checkout the
 [Developer Documentation](https://dev.twtxt.net) or over at [/docs](/docs).
 
-> __Please note:__ If you wish to contribute to this project off-[Github](https://github.com)
-> please get in touch with us and let us know! We have this project mirrored to
-> private Git hosting using [Gitea](https://gitea.io/en-us/) and can fully support
-> external collaborator this way (_even via email!_).
-
 ## Contributors
 
-Thank you to all those that have contributed to this project, battle-tested it, used it in their own projects or products, fixed bugs, improved performance and even fix tiny typos in documentation! Thank you and keep contributing!
+Thank you to all those that have contributed to this project, battle-tested it,
+used it in their own projects or products, fixed bugs, improved performance
+and even fix tiny typos in documentation! Thank you and keep contributing!
 
-You can find an [AUTHORS](/AUTHORS) file where we keep a list of contributors to the project. If you contribute a PR please consider adding your name there. There is also Github's own [Contributors](https://git.mills.io/yarnsocial/yarn/graphs/contributors) statistics.
-
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/0)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/0)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/1)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/1)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/2)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/2)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/3)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/3)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/4)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/4)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/5)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/5)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/6)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/6)
-[![](https://sourcerer.io/fame/prologic/jointwt/twtxt/images/7)](https://sourcerer.io/fame/prologic/jointwt/twtxt/links/7)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starcharts.herokuapp.com/jointwt/twtxt.svg)](https://starcharts.herokuapp.com/jointwt/twtxt)
-
-## Related Projects
-
-- [rss2twtxt](https://github.com/prologic/rss2twtxt) -- RSS/Atom to [Twtxt](https://twtxt.readthedocs.org) aggregator.
-- [Twt.social](https://twt.social) -- Hosted platform for Twt.social pods like [twtxt.net](https://twtxt.net).
-- [Goryon](https://github.com/jointwt/goryon) -- Our Flutter iOS and Android Mobile App.
-- [Twt.js](https://github.com/jointwt/twt.js) -- Our JavaScript / NodeJS library for using the API.
-- [we-are-twtxt](https://github.com/jointwt/we-are-twtxt) -- A voluntary user contributed registry of users, bots and interesting feeds.
-- [jointwt.org](https://github.com/jointwt/jointwt.org) -- Our [JoinTwt.org](https://jointwt.org) landing page.
-
+You can find an [AUTHORS](/AUTHORS) file where we keep a list of contributors
+to the project. If you contribute a PR please consider adding your name there.
 
 ## License
 
-`twtxt` is licensed under the terms of the [MIT License](/LICENSE)
+`yarn` is licensed under the terms of the [MIT License](./LICENSE)

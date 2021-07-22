@@ -30,7 +30,7 @@ const (
 	// DefaultAdminXXX is the default admin user / pod operator
 	DefaultAdminUser  = "admin"
 	DefaultAdminName  = "Administrator"
-	DefaultAdminEmail = "support@twt.social"
+	DefaultAdminEmail = "support@yarn.social"
 
 	// DefaultName is the default instance name
 	DefaultName = "twtxt.net"
@@ -41,9 +41,9 @@ const (
 
 	// DefaultMetaxxx are the default set of <meta> tags used on non-specific views
 	DefaultMetaTitle       = ""
-	DefaultMetaAuthor      = "twtxt.net / twt.social"
-	DefaultMetaKeywords    = "twtxt, twt, blog, micro-blogging, social, media, decentralised, pod"
-	DefaultMetaDescription = "📕 twtxt is a Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!"
+	DefaultMetaAuthor      = "Yarn.social"
+	DefaultMetaKeywords    = "twtxt, twt, blog, micro-blogging, social, media, decentralised, pod, yarn"
+	DefaultMetaDescription = "📕 yarn is a Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!"
 
 	// DefaultTheme is the default theme to use ('light' or 'dark')
 	DefaultTheme = "auto"

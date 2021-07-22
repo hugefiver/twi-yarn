@@ -4,7 +4,7 @@ title: About Twtxt.net a self-hosted, Twitter™-like decentralised micro-bloggi
 
 # About {{ .InstanceName }}
 
-📕 {{ .InstanceName}} is a [Twt.social](https://twt.social) Pod; a Self-Hosted,
+📕 {{ .InstanceName}} is a [Yarn.social](https://yarn.social) Pod; a Self-Hosted,
 Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking,
 your content, your data!
 
