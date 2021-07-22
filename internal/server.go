@@ -36,14 +36,8 @@ var (
 	metrics     *observe.Metrics
 	webmentions *webmention.WebMention
 
-	//go:embed static/css
-	staticCSS embed.FS
-
-	//go:embed static/js
-	staticJS embed.FS
-
-	//go:embed static/img
-	staticIMG embed.FS
+	//go:embed static
+	staticAssets embed.FS
 )
 
 func init() {
@@ -467,17 +461,17 @@ func (s *Server) initRoutes() {
 		s.router.ServeFiles("/img/*filepath", http.Dir("./internal/static/img"))
 		s.router.ServeFiles("/js/*filepath", http.Dir("./internal/static/js"))
 	} else {
-		cssFS, err := fs.Sub(staticCSS, "static/css")
+		cssFS, err := fs.Sub(staticAssets, "static/css")
 		if err != nil {
 			log.Fatal("error getting SubFS for static/css")
 		}
 
-		jsFS, err := fs.Sub(staticJS, "static/js")
+		jsFS, err := fs.Sub(staticAssets, "static/js")
 		if err != nil {
 			log.Fatal("error getting SubFS for static/js")
 		}
 
-		imgFS, err := fs.Sub(staticIMG, "static/img")
+		imgFS, err := fs.Sub(staticAssets, "static/img")
 		if err != nil {
 			log.Fatal("error getting SubFS for static/img")
 		}
@@ -499,6 +493,9 @@ func (s *Server) initRoutes() {
 
 	s.router.GET("/robots.txt", s.RobotsHandler())
 	s.router.HEAD("/robots.txt", s.RobotsHandler())
+
+	s.router.GET("/site.webmanifest", s.WebManifestHandler())
+	s.router.HEAD("/site.webmanifest", s.WebManifestHandler())
 
 	s.router.GET("/discover", s.am.MustAuth(s.DiscoverHandler()))
 	s.router.GET("/mentions", s.am.MustAuth(s.MentionsHandler()))
